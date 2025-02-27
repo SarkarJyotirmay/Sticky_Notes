@@ -1,0 +1,135 @@
+body{
+    font-family: sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.left{
+    width: 50%;
+    min-height: 100vh;
+    background-color: lightblue;
+    padding: 1rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+form{
+    width: 100%;
+}
+.inputs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.inputs textarea{
+    width: 60%;
+    height: 150px;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+}
+#button-container{
+    width: 200px;
+    height: 50px;
+    margin: 2rem 14.5%;
+    overflow: hidden;
+    position: relative;
+
+}
+#button-container > button{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(255, 89, 0), red, yellow);
+    border: 1px solid black;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 0.6;
+    transition: all 3s ease;
+}
+#button-container > button:hover{
+    opacity: 1;
+    background: linear-gradient(to left, rgb(255, 89, 0), red, yellow);
+}
+
+@media screen and (max-width:500px) {
+    #button-container{
+        margin-left: 10px;
+        width: 150px;
+    }
+}
+
+.right{
+    width: 50%;
+    min-height: 100vh;
+    background-color: #e1c2c2;
+}
+
+.right-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+/* .undo-button{
+    padding: 0.5rem;
+    border-radius: 2rem;
+    background-color: rgb(189, 182, 182);
+    color: white;
+    font-weight: 700;
+    border: none;
+} */
+
+
+.note-container{
+    min-height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.note{
+    width: 200px;
+    height: 180px;
+    border-radius: 0.5rem;
+    padding: 1.5rem 1rem;
+    /* overflow: auto; */
+    position: relative;
+}
+.text{
+    overflow: auto;
+}
+.time-stamp{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 12px;
+}
+.close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+.edit{
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    cursor: pointer;
+}
+

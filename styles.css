@@ -112,7 +112,11 @@ form{
     position: relative;
 }
 .text{
-    overflow: auto;
+    height: 150px;
+    overflow-y: scroll;
+}
+.text::-webkit-scrollbar {
+    display: none;
 }
 .time-stamp{
     position: absolute;

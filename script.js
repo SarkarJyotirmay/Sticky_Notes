@@ -56,7 +56,8 @@ function displayNotes() {
     timeStamp.classList.add("time-stamp");
     timeStamp.innerText = note.timeStamp;
     //! Close button 
-// When a note gets deletd, splice the note object from the created array push the object to deleted array.
+// When a note gets deletd, splice the note object from the created array push the object to deleted array. display notes again because DOM has been changed so new DOM should be visible after deletion of a note
+
     const close = document.createElement("span");
     close.classList.add("fa-solid", "fa-xmark", "close");
     close.addEventListener("click", (e) => {

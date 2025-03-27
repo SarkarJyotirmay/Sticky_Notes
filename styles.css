@@ -28,16 +28,22 @@ form{
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     gap: 1rem;
 }
 .inputs textarea{
-    width: 60%;
+    width: 75%;
     height: 150px;
     border: 1px solid;
     border-radius: 0.5rem;
     padding: 1rem;
     font-size: 1rem;
+}
+#color-input{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #e596f7;
 }
 #button-container{
     width: 200px;
@@ -66,12 +72,7 @@ form{
     background: linear-gradient(to left, rgb(255, 89, 0), red, yellow);
 }
 
-@media screen and (max-width:500px) {
-    #button-container{
-        margin-left: 10px;
-        width: 150px;
-    }
-}
+
 
 .right{
     width: 50%;
@@ -112,6 +113,7 @@ form{
     position: relative;
 }
 .text{
+    text-align: left;
     height: 150px;
     overflow-y: scroll;
 }
@@ -137,3 +139,25 @@ form{
     cursor: pointer;
 }
 
+@media screen and (max-width:500px) {
+    #button-container{
+        margin-left: 10px;
+        width: 150px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    #wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+    #button-container{
+        margin: 2rem auto;
+    }
+}
